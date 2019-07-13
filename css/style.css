@@ -1,0 +1,47 @@
+* {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+body {
+	background: #03004c;
+}
+
+.start {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	grid-template-columns: auto auto;
+	display: inline-grid;
+	animation-name: unfade;
+	animation-duration: 2s;
+}
+.start > img, .start > .right {
+	margin: auto 0;
+}
+
+.start > .right > .title > * {
+	text-align: right;
+	color: white;
+}
+
+.start > .right > input.download {
+	background: #044c6d;
+	color: white;
+	font-size: 1em;
+	border: 3px solid #044c6d;
+	border-radius: 3px;
+	padding: 10px;
+	width: 100%;
+	outline: none;
+	cursor: pointer;
+	transition-duration: .2s;
+}
+.start > .right > input.download:hover {
+	background: transparent;
+}
+
+@keyframes unfade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
